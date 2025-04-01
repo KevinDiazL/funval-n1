@@ -1,0 +1,29 @@
+.text {
+    text-decoration: double;
+    text-shadow: 1px 1px 0px white;
+
+}
+
+.contain {
+    background-color: #3E6680;
+    box-shadow: 3px 3px 0px white;
+    border: 3px white inset;
+    border-radius: 4px;
+    margin-right: 50%;
+}
+
+#imagen2 {
+    box-shadow: 2px 2px 2px black;
+    width: 30%;
+}
+
+img {
+    width: 5rem;
+    border-radius: 4px;
+    border-bottom: 2px white;
+}
+
+ul {
+    color: #4BB3FD;
+    list-style: circle;
+}
