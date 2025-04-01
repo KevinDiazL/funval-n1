@@ -1,0 +1,37 @@
+/*Selector universar definen el espacio de nuestros elementos y cmo se comportan. Definen los limites del elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*F12+enter podemos checar los margin y los padding*/
+}
+
+body {
+    background-color: goldenrod;
+}
+
+li {
+    list-style: none;
+    margin: 15px;
+}
+
+.nav {
+    color: white;
+    text-decoration: none;
+    /*Le quita el subrayado*/
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    background-color: brown;
+    margin: 20px;
+    width: 150px;
+    padding: 15px 10px;
+    border-radius: 12px;
+}
