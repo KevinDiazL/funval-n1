@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: green;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+header>h1 {
+    padding: 0.5em;
+    text-align: center;
+    color: white;
+}
+
+#nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: fixed;
+    top: 5rem;
+    padding-right: 100%;
+    box-shadow: 1px 1px 5px black;
+    z-index: 3;
+}
+
+#nav>p {
+
+    color: white;
+}
+
+main {
+    width: 100%;
+
+
+    z-index: 1;
+
+}
+
+.efectos1 {
+    background-color: bisque;
+    height: 50rem;
+    padding: 2rem;
+    padding-top: 10rem;
+    position: relative;
+
+}
+
+.efectos1>p,
+button,
+h1 {
+    font-size: 30px;
+}
+
+button {
+    background-color: green;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 10rem;
+}
+
+span {
+    color: white;
+}
+
+img {
+    position: absolute;
+    right: 60px;
+    top: 30%;
+    height: 400px;
+}
+
+.efectos2 {
+    background-color: white;
+    height: 30rem;
+}
+
+div {
+    background-color: rgb(208, 205, 205);
+    margin: 10px 0px 10px 20px;
+    height: 20rem;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+
+}
+
+div>p,
+ul {
+    padding-left: 50px;
+    text-align: justify;
+}
+
+footer>p {
+    color: white;
+    padding: 1em;
+    text-align: center;
+
+}
