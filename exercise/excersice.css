@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+/* .container {
+    border: solid red;
+    height: 120px;
+    background-color: blue;
+    display: flex;
+
+} */
+body {
+    border: solid 5px white;
+}
+
+header {
+    border: solid 5px yellow;
+    height: 70px;
+}
+
+nav {
+    border: solid 5px greenyellow;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: solid 5px red;
+    width: 15%;
+    height: 100%;
+}
+
+nav>div {
+    width: 40%;
+    height: 100%;
+    border: solid 5px greenyellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    border: solid 3px orange;
+    width: 30%;
+
+}
+
+main {
+    border: 5px solid orange;
+}
+
+section {
+    border: solid 5px green;
+    height: 500px;
+    display: flex;
+}
+
+section>div {
+    border: solid 5px green;
+    height: 100%;
+    width: 50%;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*cuando no hay espacion para un elelmento crea otra*/
+    gap: 30%;
+    /*Separacion de espacios */
+    padding: 10%;
+
+    /*Separacion de espacios */
+}
+
+h3 {
+    border: solid 5px red;
+    height: 35%;
+    width: 35%;
+    color: aqua;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    border: solid 5px red;
+    color: azure;
+    height: 10rem;
+    width: 10rem;
+
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    border: darkkhaki 5px outset;
+    width: 30%;
+    margin: 5%;
+}
+
+.box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+    border: brown 5px solid;
+    height: 10rem;
+    width: 5rem;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    border: 5px greenyellow solid;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+footer>div {
+    border: rgb(255, 131, 131) 5px outset;
+    width: 10rem;
+}
