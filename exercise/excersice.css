@@ -135,11 +135,12 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60%;
 
 }
 
 footer>div {
     border: rgb(255, 131, 131) 5px outset;
     width: 10rem;
+    margin: 1em;
 }
