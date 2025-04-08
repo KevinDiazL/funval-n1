@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body class="font-[Hanken_Grotesk] flex-justify-center items-center h-screen">
+  <main class="lg:flex lg:flex-row max-w-[400px] md:max-w-[800px] lg:shadow-2xl lg:rounded-3">
+    <section
+      class="bg-gradient-to-b from-[#7857ff] to-[#2e2be9] text-white flex justify-center items-center flex-col text-center pt-6 pb-10 rounded-b-4xl lg:rounded lg:w-1/2">
+      <h1>Your Result</h1>
+      <div
+        class="my-6 flex flex-col justify-center items-center bg-gradient-to-b from-[#4734ee] to-[#4e23c9] w-[130px] h-[130px] rounded-full">
+        <span class="text-[55px] font-bold">76</span>
+        <span class="opacity-40 mt-[-8px] ">of the 100</span>
+      </div>
+      <h2 class="text-2xl font-semibold mb-2">Great</h2>
+      <p class="w-[70%] opacity-70">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section class="px-8 py-5">
+      <div>
+        <h2 class="text-lg font-semibold text-[#303850]">Sumary</h2>
+      </div>
+      <div class="flex flex-col px-3 py-5">
+        <div class="flex justify-between w-full">
+          <div class="flex justify-between gap-2">
+            <img src="./assets/images/icon-reaction.svg" alt="">
+            <span class="text-[#da646a]">reaction</span>
+          </div>
+          <div>
+            <p><strong>80</strong> / 100</p>
+          </div>
+          <div>
+            <div>
+              <img src="./assets/images/icon-memory.svg" alt="">
+              <span></span>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img src="./assets/images/icon-verbal.svg" alt="">
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="./assets/images/icon-visual.svg" alt="">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <button class="w-full bg-[#303b59] py-4 text-white font-bold rounded-4xl"></button>
+      </div>
+    </section>
+
+  </main>
+
+  76
+  of 100
+
+
+
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
