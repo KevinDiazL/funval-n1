@@ -7,61 +7,85 @@
     <title>Proyectos y practicas Nivel 1</title>
     <meta name="author" content="Kevin Manuel Diaz Luis" />
     <meta name="description" content="Practicas y proyectos del curso de Programacion front-end de Funval" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&family=Young+Serif&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gradient-to-b from-[#52796F] via-[#84A98C] to-[#CAD2C5] h-[1000px] font-[Righteous] ">
+    <!-- bg-gradient-to-b from-[#52796F] via-[#84A98C] to-[#CAD2C5] -->
     <header>
-        <nav>
+        <nav class="bg-gray-500">
             <ul>
                 <li>
                     <picture>
-                        <img src="./resources/doughnut-chart-solid-24.png" alt="icono de circulo" />
+                        <img src="./resources/index/doughnut-chart-solid-24.png" alt="icono de circulo" />
                     </picture>
                 </li>
                 <li>
                     <a class="nav" href="" target="_blank">
-                        <img src="./resources/source.gif" width="20em">
+                        <img src="./resources/index/source.gif" width="20em">
                         <span>Inicio</span></a>
                 </li>
                 <li>
                     <a class="nav" href="https://github.com/KevinDiazL/funval-n1" target="_blank">
-                        <img src="./resources/github.png" alt="icono de gato" width="20em">
+                        <img src="./resources/index/github.png" alt="icono de gato" width="20em">
                         <span>Github</span></a>
                 </li>
             </ul>
         </nav>
     </header>
     <hr />
-    <main>
-        <h1>Kevin Manuel Diaz Luis</h1>
+    <main class="flex flex-col justify-center items-center">
+        <h1 class="text-6xl font-bold">Kevin Manuel Diaz Luis</h1>
+        <h2 class="text-4xl font-semibold ">Practicas y proyectos</h2>
+        <br>
         <section>
-            <h2>Practicas y proyectos</h2>
-            <ul>
+            <ul class="flex flex-wrap justify-center text-amber-50 gap-8 mx-10">
                 <li class="card "><!--Cada vez que tengamos practica o proyecto hacemos otro-->
                     <a href="./practica-1/practica-1.html">
-                        <article>
-                            <h3>Practica 1</h3>
+                        <article
+                            class="bg-radial from-[#5AAA95] to-[#087F8C] rounded-4xl w-100 h-60 text-center shadow-[10px_10px_0px_rgba(255,255,255,0.9)] border-4 border-gray-500 p-2 hover:rotate-3 duration-100 hover:border-black hover:animate-pulse ">
+                            <h3 class="text-3xl">Practica 1</h3>
                             <p>Pagina web simple</p>
-                            <img>
+                            <img class="border-2 border-black w-4/5 mx-auto" src="./resources/index/P1.jpeg"
+                                alt="Practica1">
                         </article>
                     </a>
                 </li>
                 <li class="card">
                     <a href="./recipe-page-main/index.html">
-                        <article>
-                            <h3>Practica 2</h3>
+                        <article
+                            class="bg-radial from-[#5AAA95] to-[#087F8C] rounded-4xl w-100 h-60 text-center shadow-[10px_10px_0px_rgba(255,255,255,0.9)] border-4 border-gray-500 p-2 hover:rotate-3 duration-100 hover:border-black hover:animate-pulse">
+                            <h3 class="text-3xl">Practica 2</h3>
                             <p>recipe-page-main</p>
-                            <img>
+                            <img class="border-2 border-black w-4/5 mx-auto " src="./resources/index/p2.gif"
+                                alt="Practica2" style="animation-play-state: paused">
                         </article>
                     </a>
                 </li>
                 <li class="card">
                     <a href="./practica-3/practica-3.html">
-                        <article>
-                            <h3>Practica 3</h3>
+                        <article
+                            class="bg-radial from-[#5AAA95] to-[#087F8C] rounded-4xl w-100 h-60 text-center shadow-[10px_10px_0px_rgba(255,255,255,0.9)] border-4 border-gray-500 p-2 hover:rotate-3 duration-100 hover:border-black hover:animate-pulse">
+                            <h3 class="text-3xl">Practica 3</h3>
                             <p>recipe-page-main</p>
-                            <img>
+                            <img class="border-2 border-black w-4/5 mx-auto" src="./resources/index/p3.gif"
+                                alt="Practica3">
+                        </article>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="./social-links-profile-main/index.html">
+                        <article
+                            class="bg-radial from-[#5AAA95] to-[#087F8C] rounded-4xl w-100 h-60 text-center shadow-[10px_10px_0px_rgba(255,255,255,0.9)] border-4 border-gray-500 hover:rotate-3 duration-100 hover:border-black hover:animate-pulse">
+                            <h3 class="text-3xl">Pagina de Perfil</h3>
+                            <p>recipe-page-main</p>
+                            <img class="border-2 border-black w-4/5 mx-auto" src="./resources/index/p4.png"
+                                alt="Practica4">
                         </article>
                     </a>
                 </li>
