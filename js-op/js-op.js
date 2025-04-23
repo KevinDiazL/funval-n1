@@ -1,3 +1,89 @@
+
+
+alert("Bienvenido :D")
+const error = () => alert("Dato incorrecto, intente nuevamente");//Mensaje de error cuando el usuario no digite bien las opciones
+const seguridad = function () {
+    //Comprueba la seguridad del usuario pidiendo claves y su numero de identidad.
+    let clave = prompt("Ingresa tu clave");
+    let numeroDeIdentidad = prompt("Ingresa tu numero de identidad: ");
+    alert("Clave: " + clave + "\nNumero de identidad: " + numeroDeIdentidad);
+}
+
+function retiro() {
+    monto = parseFloat(prompt("¿Que cantidad deseas retirar?"));
+    if (monto > saldo2) {
+        alert("Saldo insuficiente");
+    }
+    else {
+        saldo2 = saldo2 - monto;
+        alert("Retiro exitoso");
+    }
+}
+
+function deposito() {
+    monto = parseFloat(prompt("¿Cuanto deseas depositar"))
+    saldo2 = saldo2 + monto;
+    alert("Deposito exitoso");
+}
+
+function saldo() {
+    alert("Tu saldo es: " + saldo2);
+}
+
+while (true) {
+    let idioma = prompt("Seleccione el idioma:\n1)Español\n2)English");
+    if (idioma === "1") {
+        alert("Tu idioma es: Español")
+        break;
+    }
+    else if (idioma === "2") {
+        alert("Tu idioma es: English")
+        break;
+    }
+    else {
+        error();
+    }
+}
+let intento = true;
+let deposito2, retiro2, saldo2 = 0, monto;
+while (intento == true) {
+    let opcion = prompt(`¿Que operacion deseas realizar(Selecciona con un numero la operacion)
+    1)Retiro
+    2)Deposito
+    3)Saldo`);
+    switch (opcion) {
+        case "1":
+            seguridad();
+            retiro();
+
+            break;
+        case "2":
+            deposito();
+            break;
+
+        case "3":
+            seguridad();
+            saldo();
+            break;
+
+        default:
+            error();
+            break;
+    }
+    while (true) {
+        let opcion2 = prompt("Deseas realizar otra operacion 1)Si 2)No")
+        if (opcion2 === "1") {
+            break;
+        }
+        else if (opcion2 === "2") {
+            intento = false;
+            break;
+        }
+        else {
+            error();
+        }
+    }
+}
 // El programa pedira al usuario la medida de un lado del cuadrado y mostrara el resultado por una alerta
 // Lammar las variables, pedir los datos con prompts y almacenarlos en las variables y luego hacer la operacion. Al final mostrar con alert() el resultado.
 
@@ -79,87 +165,3 @@ opcional(Switch case)
 //     }
 //     operacion2 = prompt("Deseas realizar otra operacion? \n1)Si \n2)no")
 // }
-
-
-alert("Bienvenido :D")
-const error = () => alert("Dato incorrecto, intente nuevamente");//Mensaje de error cuando el usuario no digite bien las opciones
-const seguridad = function () {
-    //Comprueba la seguridad del usuario pidiendo claves y su numero de identidad.
-    let clave = prompt("Ingresa tu clave");
-    let numeroDeIdentidad = prompt("Ingresa tu numero de identidad: ");
-    alert("Clave: " + clave + "\nNumero de identidad: " + numeroDeIdentidad);
-}
-
-function retiro() {
-    monto = parseFloat(prompt("¿Que cantidad deseas retirar?"));
-    if (monto > saldo2) {
-        alert("Saldo insuficiente");
-    }
-    else {
-        saldo2 = saldo2 - monto;
-    }
-}
-
-function deposito() {
-    monto = parseFloat(prompt("¿Cuanto deseas depositar"))
-    saldo2 = saldo2 + monto;
-}
-
-function saldo() {
-    alert("Tu saldo es: " + saldo2);
-}
-
-while (true) {
-    let idioma = prompt("Seleccione el idioma:\n1)Español\n2)English");
-    if (idioma === "1") {
-        alert("Tu idioma es: Español")
-        break;
-    }
-    else if (idioma === "2") {
-        alert("Tu idioma es: English")
-        break;
-    }
-    else {
-        error();
-    }
-}
-let intento = true;
-let deposito2, retiro2, saldo2 = 0, monto;
-while (intento == true) {
-    let opcion = prompt(`¿Que operacion deseas realizar(Selecciona con un numero la operacion)
-    1)Retiro
-    2)Deposito
-    3)Saldo`);
-    switch (opcion) {
-        case "1":
-            seguridad();
-            retiro();
-
-            break;
-        case "2":
-            deposito();
-            break;
-
-        case "3":
-            seguridad();
-            saldo();
-            break;
-
-        default:
-            error();
-            break;
-    }
-    while (true) {
-        let opcion2 = prompt("Deseas realizar otra operacion 1)Si 2)No")
-        if (opcion2 === "1") {
-            break;
-        }
-        else if (opcion2 === "2") {
-            intento = false;
-            break;
-        }
-        else {
-            error();
-        }
-    }
-}
