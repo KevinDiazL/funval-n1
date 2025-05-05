@@ -66,19 +66,42 @@ function areas() {
         2)circulo
         3)rectangulo
         4)traingulo`)
+    switch (opcion) {
+        case "1":
+            const cuadrado = function (lado) {
+                return lado * lado
+            }
+            cuadrado();
+            break;
+        case "2":
+            const circulo = function (radio) {
+                const pi = 3.1416;
+                return (radio ** 2) * (radio)
+            }
+            circulo();
 
-    const cuadrado = function (lado) {
-        return lado * lado
-    }
-    const circulo = function (radio) {
-        const pi = 3.1416;
-        return (radio ** 2) * (radio)
-    }
-    const rectangulo = function (base, altura) {
-        return base * altura;
-    }
-    const triangulo = function (base, altura) {
-        return base * altura / 2;
+            break;
+        case "3":
+            const rectangulo = function (base, altura) {
+                return base * altura;
+            }
+            rectangulo();
+            break;
+        case "4":
+            const triangulo = function (base, altura) {
+                return base * altura / 2;
+            }
+            triangulo();
+            break;
+
+        default:
+            alert("Dato incorrecto");
+            break;
     }
 
 }
+
+
+
+
+areas();

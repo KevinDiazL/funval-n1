@@ -146,3 +146,4 @@ for (let j = 0; j < personas.cursos.length; j++) {
   }
   console.log("El promedio es " + suma / personas.cursos[0].notas.length);
 }  */
+
