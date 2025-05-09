@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./main.js" defer></script>
+    <script src="./main-copy.js" defer></script>
     <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 <!-- npx @tailwindcss/cli -i ./input.css -o ./pokedex/output.css --watch -->
@@ -41,31 +42,31 @@
         <header class="flex items-center flex-col bg-[#ffcc33] h-[15%]">
             <img src="https://vanilla-web-pokedex.pages.dev/assets/images/pokedex-logo.png" alt="" class="h-25 w-50" />
             <div id="container-butons-filters" class="gap-30 flex flex-wrap justify-center mt-3">
-                <button class="bg-red-500 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5"
-                    id="fuego">fuego
+                <button class="bg-red-500 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5 btn"
+                    id="fuego" data-id="0">fuego
                     <img src="./icons8-elemento-fuego-32.png" alt="">
                 </button>
-                <button class="bg-blue-700 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5"
-                    id="agua">agua
+                <button class="bg-blue-700 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5 btn"
+                    id="agua" data-id="1">agua
                     <img src="./icons8-agua-32.png" alt="">
                 </button>
-                <button class="bg-green-700 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5"
-                    id="planta">planta
+                <button class="bg-green-700 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5 btn"
+                    id="planta" data-id="2">planta
                     <img src="./icons8-comida-natural-32.png" alt="">
                 </button>
-                <button class="bg-amber-600 px-4 py-1 rounded flex items-center justify-center gap-0.5 "
-                    id="rayo">electrico
+                <button class="bg-amber-600 px-4 py-1 rounded flex items-center justify-center gap-0.5 btn" id="rayo"
+                    data-id="3">electrico
                     <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M32 2L12 36H28L20 62L52 28H36L44 2H32Z" fill="#FFD700" stroke="#FFA500"
                             stroke-width="2" stroke-linejoin="round" />
                     </svg>
                 </button>
-                <button class="bg-gray-300 px-4 py-1 rounded flex items-center justify-center gap-0.5"
-                    id="fantasma">fantasma
+                <button class="bg-gray-300 px-4 py-1 rounded flex items-center justify-center gap-0.5 btn" id="fantasma"
+                    data-id="4">fantasma
                     <img src="./xOE2vw.png" alt="" class="w-[25px] h-[25px]">
                 </button>
-                <button class="bg-purple-900 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5"
-                    id="veneno">veneno
+                <button class="bg-purple-900 text-white px-4 py-1 rounded flex items-center justify-center gap-0.5 btn"
+                    id="veneno" data-id="5">veneno
                     <img src="./Poison_JE3_BE2.webp" alt="" class="w-[32px] h-[32px]">
                 </button>
             </div>
