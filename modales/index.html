@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <!-- npx @tailwindcss/cli -i ./input.css -o ./modales/output.css --watch -->
+    <h1>hola mundo</h1>
+    <!-- Elemento para desplegar el modal -->
+    <button id="openModal" class="bg-blue-500 text-white modal-entero">
+        Abrir modal
+    </button>
+    <!-- Inicio del modal -->
+    <div id="modal" class="fixed inset-0 bg-black/50 flex items-center justify-center p-3 hidden modal-entero">
+        <!-- ocupa toda la pantalla -->
+        <div class="relative bg-white w-96 rounded-lg text-blue-400">
+            <h1 class="text-2xl font-bold text-red-500 mb-6">Esto es un modal</h1>
+            <p>Esto es el contenido de nuestro modal</p>
+            <button id="closeModal" class="bg-red-500 text-white rounded-lg p-2 mt-55">Salir del modal</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

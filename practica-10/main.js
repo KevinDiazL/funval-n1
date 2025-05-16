@@ -19,8 +19,6 @@ function Llenardatos(array) {
         <p>${element.company.name}</p>
         <p>${element.phone}</p>
         </div>
-        
-        
         `;
 
     });
